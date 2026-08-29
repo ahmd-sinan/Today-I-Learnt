@@ -16,7 +16,7 @@ Package management operates on two distinct functional levels. In modern environ
 *   **The Low-Level Tool (`dpkg`, `rpm`):** The manual laborers of the system. These tools handle the raw mechanics of unpacking the individual `.deb` or `.rpm` files, placing the binaries in `/usr/bin`, and running the initial installation scripts. *Crucially, low-level tools do not resolve dependencies.*
 *   **The High-Level Tool (`apt`, `dnf`, `zypper`):** The intelligent managers. These tools connect to remote software repositories (online servers), download the required packages, and automatically resolve complex dependency chains (sometimes pulling in hundreds of required background packages) before handing them off to the low-level tool for installation.
 
-## 3. The Three Major Ecosystems 
+## The Three Major Ecosystems 
 Each major Linux distribution family utilizes a specific combination of high-level and low-level tools.
 
 *  **Debian Family (Debian, Ubuntu, Mint):** 
