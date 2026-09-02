@@ -4,32 +4,32 @@
 
 Today I learned the architecture of Linux Package Management Systems. I explored the differences between high-level dependency resolvers and low-level package unpackers, the division between the Debian and RPM ecosystems, and the critical workflows for managing software securely on enterprise servers.
 
-## 1. What is a Package Management System? 
+## What is a Package Management System? 
 Unlike standard Windows installers (`.exe`), Linux operating systems and their add-on software are distributed as "packages." 
 *   **The Concept:** A package is a compressed archive containing the pre-compiled software files, configuration defaults, and strict instructions on where to place those files within the Linux Filesystem Hierarchy (FHS).
 *   **Dependency Chains:** Packages rarely work in isolation. A web application package written in Python will explicitly declare that it "depends" on the Python package. The system must install the appropriate Python packages first before the web app can function.
 *   **The Great Divide:** There are two broad, fundamentally incompatible families of package managers in wide use today: those based on **Debian** (using `.deb` files), and those based on **Red Hat/SUSE** (using `.rpm` files).
 
-## 2. The Two-Tier Architecture 
+## The Two-Tier Architecture 
 Package management operates on two distinct functional levels. In modern environments, users almost exclusively interact with the high-level tools, which automate the low-level tools in the background.
 
 *   **The Low-Level Tool (`dpkg`, `rpm`):** The manual laborers of the system. These tools handle the raw mechanics of unpacking the individual `.deb` or `.rpm` files, placing the binaries in `/usr/bin`, and running the initial installation scripts. *Crucially, low-level tools do not resolve dependencies.*
 *   **The High-Level Tool (`apt`, `dnf`, `zypper`):** The intelligent managers. These tools connect to remote software repositories (online servers), download the required packages, and automatically resolve complex dependency chains (sometimes pulling in hundreds of required background packages) before handing them off to the low-level tool for installation.
 
-## 3. The Three Major Ecosystems 
+## The Three Major Ecosystems 
 Each major Linux distribution family utilizes a specific combination of high-level and low-level tools.
 
-1.  **Debian Family (Debian, Ubuntu, Mint):** 
+*  **Debian Family (Debian, Ubuntu, Mint):** 
     *   **High-Level:** `apt` (Advanced Packaging Tool). It manages remote repositories and dependency resolution.
     *   **Low-Level:** `dpkg`.
-2.  **Red Hat Family (RHEL, Fedora, CentOS):**
+*  **Red Hat Family (RHEL, Fedora, CentOS):**
     *   **High-Level:** `dnf` (Dandified YUM). 
     *   **Low-Level:** `rpm` (Red Hat Package Manager).
-3.  **SUSE Family (openSUSE, SLES):**
+* **SUSE Family (openSUSE, SLES):**
     *   **High-Level:** `zypper`. Closely resembles `dnf` in syntax.
     *   **Low-Level:** `rpm`.
 
-## 4. Crucial Rules for `apt` (Debian/Ubuntu) 
+## Crucial Rules for `apt` (Debian/Ubuntu) 
 Managing a Debian-based server requires strict adherence to the `apt` cache lifecycle to avoid breaking the system or installing outdated software.
 
 *   **The Local Cache Rule (`apt update`):** The `apt` tool does *not* search the internet every time you ask it to install something. It searches a locally downloaded text file (a cache) of available packages. You must run `apt update` to sync and refresh this local list from the remote servers *before* installing or upgrading software. 
@@ -39,7 +39,7 @@ Managing a Debian-based server requires strict adherence to the `apt` cache life
     *   `apt autoremove`: A critical cleanup command that scans the system and deletes background dependencies that were installed alongside `foo` but are no longer needed by any other program.
     *   `apt purge foo`: The "nuclear" option. It removes the application *and* completely deletes all leftover configuration files from the `/etc` directory.
 
-## 5. High-Level Command Reference (The Daily Drivers) 
+## High-Level Command Reference (The Daily Drivers) 
 Commands used for downloading and resolving software from remote internet repositories.
 
 | Action | Debian/Ubuntu (`apt`) | Fedora/RHEL (`dnf`) | openSUSE (`zypper`) |
@@ -52,7 +52,7 @@ Commands used for downloading and resolving software from remote internet reposi
 | **List Installed Only** | `apt list --installed` | `dnf list installed` | `zypper search --installed-only`|
 | **List All Available** | `apt list` | `dnf list available` | `zypper packages` (or `zypper pa`) |
 
-## 6. Low-Level Command Reference (Manual File Installation) 🛠️
+## Low-Level Command Reference (Manual File Installation) 
 Commands used when you have manually downloaded a raw `.deb` or `.rpm` file to your local hard drive and need to force the system to unpack it.
 
 | Action | Debian/Ubuntu (`dpkg`) | RHEL / Fedora / SUSE (`rpm`) |
