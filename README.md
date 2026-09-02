@@ -128,6 +128,7 @@ I keep a flat directory structure for simplicity. Files are named using the `YYY
 * [2026-08-24] **Linux CLI: Bash Architecture & Shell Scripting Fundamentals**
 * [2026-08-24] **System Architecture: Understanding .conf Files**
 * [2026-08-29] **Linux System Architecture: Package Management & Dependency Resolution** [LFS101]
+* **Linux CLI: System Documentation & The man Pages**
 * *(More coming soon...)*
 
 ---
