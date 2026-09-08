@@ -22,7 +22,7 @@ TIL is a repository where I document short notes, tips, and tricks that I learn 
 ## 👨‍💻 About Me
 I am a BCA student deeply passionate about low-level systems, backend architecture, and cloud computing. My technical focus is on building robust server-side infrastructure and mastering modern deployment technologies.
 
-## 📂 Repository Structure
+## 📂 Repository Structure±+++++++
 I keep a flat directory structure for simplicity. Files are named using the `YYYY-MM-DD-Topic.md` format to keep them chronologically sorted.
 
 **Topics Covered:**
