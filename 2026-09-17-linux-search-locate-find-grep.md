@@ -43,3 +43,11 @@ $ grep "Port" /etc/ssh/sshd_config
 # Filtering a data stream: Lists all active processes, but only shows the ones related to "apache"
 $ ps aux | grep apache
 ```
+
+## Summary Comparison Matrix 📊
+| Feature | `locate` | `find` | `grep` |
+| :--- | :--- | :--- | :--- |
+| Primary Target | File names and pathsFiles, directories, and metadata | Text strings inside files/streams | Search MethodQueries a static databaseCrawls the live filesystem |
+| Pattern matching (Strings & Regex) | SpeedExtremely Fast (O(1) lookup) | Slower (Depends on disk I/O) | Variable (Depends on file size/CPU) |
+| Real-Time Accuracy | ❌ No (Depends on `updatedb`) | ✅ Yes | ✅ Yes | 
+| Primary SysAdmin Use | "Where did I put that script?" | "Find all logs over 1GB and delete them" | "Find the 'failed password' errors in this log." |
