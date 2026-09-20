@@ -133,6 +133,7 @@ I keep a flat directory structure for simplicity. Files are named using the `YYY
 * [2026-09-15] **Linux CLI: Disk Management, Partitions & Filesystems**
 * [2026-09-17] **Linux CLI: The Search Architecture (locate vs. find vs. grep)**
 * [2026-09-18] **Computer Networking Fundamentals: Architecture, Topologies & Scale**
+* [2026-09-18] **Computer Networking: Physical Cables & Connectors**
 * *(More coming soon...)*
 
 ---
