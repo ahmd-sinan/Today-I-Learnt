@@ -1,4 +1,4 @@
-# Computer Networking: Physical Cables & Connectors 🔌
+# Computer Networking: Physical Cables 🔌
 
 **Date:** 2026-09-20
 
@@ -112,35 +112,3 @@ The core carries light. The cladding helps keep the light inside the core throug
 *   Installation requires special tools
 *   Cable can be damaged if bent too much
 *   Repairing fiber requires special skills
-
-## Ethernet Cable Categories
-Ethernet cables are classified into categories such as Cat5e, Cat6 and Cat6a. The category indicates the cable’s performance capability.
-
-| Category | Common speed capability | Frequency | Typical maximum Ethernet length |
-| :--- | :--- | :--- | :--- |
-| **Cat1** | Telephone signals | Very low | Not used for modern Ethernet |
-| **Cat2** | Older low-speed networks | Up to 1 MHz | Obsolete |
-| **Cat3** | 10 Mbps Ethernet | 16 MHz | Up to 100 m |
-| **Cat4** | Older token-ring networks | 20 MHz | Obsolete |
-| **Cat5** | Older Ethernet | 100 MHz | Up to 100 m |
-| **Cat5e** | Up to 1 Gbps commonly | 100 MHz | Up to 100 m |
-| **Cat6** | 1 Gbps commonly; higher speeds over shorter distances | 250 MHz | Up to 100 m depending on speed |
-| **Cat6a** | Up to 10 Gbps | 500 MHz | Up to 100 m |
-| **Cat7** | Higher shielding and frequency capability | 600 MHz | Depends on standard and installation |
-| **Cat8** | High-speed data-center connections | Up to 2000 MHz| Usually up to 30 m for supported high-speed Ethernet |
-
-**Important points:**
-*   A higher category does not automatically mean faster internet.
-*   The network speed also depends on: Network cards, Switches, Routers, Internet plan, Cable length, Cable quality, and Network standard.
-*   The usual maximum copper Ethernet channel length is around 100 metres.
-*   Long cable runs may require fiber, switches or repeaters.
-
-## RJ45 Connector
-An Ethernet cable commonly uses an 8P8C modular connector, often called an RJ45 connector. It has eight contact positions.
-
-The eight wires are arranged in a specific order before inserting them into the connector. Correct arrangement is important because incorrect wiring can cause:
-*   No connection
-*   Slow connection
-*   Unstable connection
-*   Incorrect wire mapping
-*   Cable tester failure
