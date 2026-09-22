@@ -4,7 +4,7 @@
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="https://img.shields.io/github/last-commit/ahmd-sinan/Today-I-Learned?style=flat&label=Last%20Learned&color=green" alt="Last Learned" />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://img.shields.io/badge/Total%20Learnings-92-blue?style=flat" alt="Total Learnings" />
+  <img src="https://img.shields.io/badge/Total%20Learnings-93-blue?style=flat" alt="Total Learnings" />
 </div>
 <br />
 
@@ -133,7 +133,8 @@ I keep a flat directory structure for simplicity. Files are named using the `YYY
 * [2026-09-15] **Linux CLI: Disk Management, Partitions & Filesystems**
 * [2026-09-17] **Linux CLI: The Search Architecture (locate vs. find vs. grep)**
 * [2026-09-18] **Computer Networking Fundamentals: Architecture, Topologies & Scale**
-* [2026-09-18] **Computer Networking: Physical Cables & Connectors**
+* [2026-09-20] **Computer Networking: Physical Cables & Connectors**
+* [2026-09-21] **Computer Networking: Ethernet Categories, Wiring Standards & Crimping**
 * *(More coming soon...)*
 
 ---

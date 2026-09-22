@@ -5,7 +5,7 @@
 
 Today I learned the detailed specifications of Ethernet networking. I explored the different performance categories of Ethernet cables, the precise T568B wiring standard for RJ45 connectors, the differences between Straight-through and Crossover cables, and the exact 10-step process for crimping and testing a network cable.
 
-## 1. Ethernet Cable Categories
+## Ethernet Cable Categories
 Ethernet cables are classified into categories such as Cat5e, Cat6 and Cat6a. The category indicates the cable’s performance capability.
 
 | Category | Common speed capability | Frequency | Typical maximum Ethernet length |
@@ -34,7 +34,7 @@ Ethernet cables are classified into categories such as Cat5e, Cat6 and Cat6a. Th
 *   The usual maximum copper Ethernet channel length is around 100 metres.
 *   Long cable runs may require fiber, switches or repeaters.
 
-## 2. RJ45 Connector
+## RJ45 Connector
 An Ethernet cable commonly uses an 8P8C modular connector, often called an RJ45 connector. It has eight contact positions.
 
 The eight wires are arranged in a specific order before inserting them into the connector. Correct arrangement is important because incorrect wiring can cause:
@@ -44,7 +44,7 @@ The eight wires are arranged in a specific order before inserting them into the 
 *   Incorrect wire mapping
 *   Cable tester failure
 
-## 3. T568B Wiring Standard
+## T568B Wiring Standard
 The T568B color order is:
 1. White-orange
 2. Orange
@@ -67,9 +67,9 @@ The T568B color order is:
 
 *Note:* The order must be the same when viewed with the connector contacts facing the correct direction.
 
-## 4. Ethernet Cable Types
+## Ethernet Cable Types
 
-### 4.1 Straight-Through Cable
+### Straight-Through Cable
 A straight-through cable uses the same wiring standard on both ends.
 *   **Example:** T568B → T568B
 *   **Common uses:**
@@ -78,7 +78,7 @@ A straight-through cable uses the same wiring standard on both ends.
     *   Printer to switch
     *   Access point to switch
 
-### 4.2 Crossover Cable
+### Crossover Cable
 A crossover cable uses different wiring standards on each end.
 *   **Example:** T568A → T568B
 *   **Traditionally connects similar device types, such as:**
@@ -87,7 +87,7 @@ A crossover cable uses different wiring standards on each end.
     *   Router to router
 *   *Note:* Modern devices often support auto-MDI/MDIX, which can automatically detect and correct the need for crossover wiring. Because of this, many modern devices can communicate using a normal straight-through cable.
 
-### 4.3 Rollover Cable
+### Rollover Cable
 A rollover cable uses a reversed pin arrangement.
 *   **Mainly used for:**
     *   Console access
@@ -95,7 +95,7 @@ A rollover cable uses a reversed pin arrangement.
     *   Router and switch administration
 *   *Note:* A rollover cable is not normally used for ordinary Ethernet data communication.
 
-## 5. Ethernet Cable Crimping Process
+## Ethernet Cable Crimping Process
 The general process for making an Ethernet cable is:
 
 *   **Step 1: Cut the cable.** Cut the required length of twisted-pair cable.
@@ -113,7 +113,7 @@ The general process for making an Ethernet cable is:
 *   **Step 9: Repeat on the other end.** Make the second end using the required wiring standard.
 *   **Step 10: Test the cable.** Use a cable tester to check the wire connections.
 
-## 6. Ethernet Cable Testing
+## Ethernet Cable Testing
 A cable tester checks whether the wires are connected to the correct pins.
 
 A correctly wired straight-through cable usually shows:
