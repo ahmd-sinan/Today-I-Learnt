@@ -1,8 +1,7 @@
 # Computer Networking: Core Intermediary Devices & Servers 🖥️
 
 **Date:** 2026-09-22
-**Category:** Computer Fundamentals / Networking
-**Tags:** #Networking #Switch #Router #Server #Firewall #Hardware
+
 
 Today I learned the functional definitions and operational mechanics of core network hardware. I explored how Switches manage internal LAN traffic, how Routers navigate between different networks, the various classifications of Servers, and the foundational rules of Firewalls.
 
