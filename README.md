@@ -135,6 +135,7 @@ I keep a flat directory structure for simplicity. Files are named using the `YYY
 * [2026-09-18] **Computer Networking Fundamentals: Architecture, Topologies & Scale**
 * [2026-09-20] **Computer Networking: Physical Cables & Connectors**
 * [2026-09-21] **Computer Networking: Ethernet Categories, Wiring Standards & Crimping**
+* [2026-09-22] **Computer Networking: Core Intermediary Devices & Servers**
 * *(More coming soon...)*
 
 ---
