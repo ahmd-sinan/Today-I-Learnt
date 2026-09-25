@@ -4,7 +4,7 @@
 
 Today I learned the foundational mechanics of network addressing and troubleshooting. I explored the structure of IPv4, historical classful ranges vs. modern CIDR notation, the difference between physical MAC addresses and logical IP addresses, and how to use basic command-line tools to diagnose network connectivity.
 
-## 1. IP Address
+## IP Address
 An IP address identifies a network interface at the IP layer. There are two major versions: IPv4 and IPv6.
 
 ### IPv4
@@ -16,7 +16,7 @@ IPv4 uses 32 bits. It is written as four decimal numbers separated by dots.
 1.  Network portion (identifies the network)
 2.  Host portion (identifies a device inside that network)
 
-## 2. IPv4 Address Classes
+## IPv4 Address Classes
 Traditional IPv4 classful addressing divides addresses into Classes A, B and C.
 
 *   **Class A:**
@@ -39,7 +39,7 @@ Traditional IPv4 classful addressing divides addresses into Classes A, B and C.
 
 *Important note:* Classful addressing is mainly historical. Modern networks use CIDR and subnetting, which provide more flexible address allocation.
 
-## 3. Private IPv4 Address Ranges
+## Private IPv4 Address Ranges
 Private IP addresses are used inside local networks and are not directly routable across the public internet. Home routers commonly use private IP addresses and perform NAT to communicate with the internet.
 
 **The main private ranges are:**
@@ -52,13 +52,13 @@ Private IP addresses are used inside local networks and are not directly routabl
 *   `172.16.10.20`
 *   `192.168.1.25`
 
-## 4. Public and Private IP Addresses
+## Public and Private IP Addresses
 *   **Private IP address:** Used inside a local or private network. (Example: `192.168.1.10`)
 *   **Public IP address:** Used to identify a network or device on the public internet. A public IP address must be globally coordinated and routable.
 
 *Important:* A computer can have a private IP address inside the LAN, and simultaneously use a public IP address through the router or cloud service.
 
-## 5. Subnet Mask
+## Subnet Mask
 A subnet mask tells us which part of an IPv4 address represents the network and which part represents the host.
 
 **Example:**
@@ -71,7 +71,7 @@ In this example:
 *   Host portion: `10`
 *   The `/24` means that 24 bits are used for the network portion.
 
-## 6. CIDR Notation
+## CIDR Notation
 CIDR means Classless Inter-Domain Routing. CIDR writes an IP address with a prefix length.
 
 **Example: `192.168.1.0/24`**
@@ -96,14 +96,14 @@ In a normal IPv4 subnet, two addresses are usually reserved: the Network address
 
 *Note:* The exact usable-address rule can differ for special-purpose networks and modern point-to-point configurations.
 
-## 7. Network, Host, and Broadcast Addresses
+## Network, Host, and Broadcast Addresses
 Consider the network: `192.168.1.0/24`
 
 *   **Network address:** `192.168.1.0` (Identifies the network).
 *   **Usable host range:** `192.168.1.1` – `192.168.1.254` (Can be assigned to devices).
 *   **Broadcast address:** `192.168.1.255` (Used to send traffic to all devices in the subnet).
 
-## 8. Default Gateway
+## Default Gateway
 A default gateway is the device a computer uses to communicate with destinations outside its local network. Usually, the default gateway is the router’s LAN IP address.
 
 **Example:**
@@ -113,7 +113,7 @@ A default gateway is the device a computer uses to communicate with destinations
 
 If the computer wants to contact `192.168.1.20`, it may communicate directly because the device is in the same subnet. If it wants to contact a public internet server, it sends the traffic to the default gateway.
 
-## 9. MAC Address
+## MAC Address
 A MAC address is a hardware-level address associated with a network interface. It is commonly written in hexadecimal and mainly used inside local Ethernet networks.
 *   **Example:** `00-1A-2B-3C-4D-5E`
 
@@ -126,7 +126,7 @@ A MAC address is a hardware-level address associated with a network interface. I
 | **Can change?** | Yes | Usually fixed by manufacturer, but can be changed or spoofed |
 | **Example** | `192.168.1.10` | `00:1A:2B:3C:4D:5E` |
 
-## 10. `ipconfig` Command
+## `ipconfig` Command
 On Windows, the `ipconfig` command displays network configuration.
 It commonly shows:
 *   IPv4 address
@@ -142,7 +142,7 @@ For more detailed information, run `ipconfig /all`. This can show:
 *   Network adapter details
 *   Lease information
 
-## 11. `ping` Command
+## `ping` Command
 The `ping` command checks whether another device can be reached through an IP network. Ping normally uses ICMP Echo Request and ICMP Echo Reply messages.
 *   **Example:** `ping 192.168.1.20`
 
