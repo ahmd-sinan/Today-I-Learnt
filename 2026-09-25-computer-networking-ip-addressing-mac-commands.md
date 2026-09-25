@@ -58,6 +58,27 @@ Private IP addresses are used inside local networks and are not directly routabl
 
 *Important:* A computer can have a private IP address inside the LAN, and simultaneously use a public IP address through the router or cloud service.
 
+## IPv6 Architecture
+Because the world ran out of available IPv4 addresses, IPv6 was created to provide a virtually unlimited number of unique IP addresses.
+
+IPv6 uses 128 bits (compared to IPv4's 32 bits). It is written using hexadecimal characters (0-9 and a-f) divided into eight groups of four characters, separated by colons.
+
+*   **Example:** `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
+
+**IPv6 Compression Rules (Shortening the Address):**
+To make IPv6 addresses easier to read and type, network engineers use two strict rules to compress them:
+1.  **Omit Leading Zeros:** You can remove the zeros at the beginning of any block. 
+    *   `0db8` becomes `db8`
+    *   `0370` becomes `370`
+2.  **Double Colon (`::`):** You can replace consecutive blocks of all zeros with a single double colon. *Note: You can only use the double colon once in a single IPv6 address.*
+    *   `2001:db8:85a3:0000:0000:8a2e:370:7334` compresses down to `2001:db8:85a3::8a2e:370:7334`
+
+**Network and Host Portions in IPv6:**
+Instead of a traditional subnet mask, IPv6 strictly uses CIDR notation.
+*   **Prefix:** The first 64 bits normally represent the network portion (Routing Prefix and Subnet ID).
+*   **Interface ID:** The last 64 bits represent the host portion (the specific device).
+*   *Standard Prefix:* A standard IPv6 LAN subnet is almost always a `/64`.
+
 ## Subnet Mask
 A subnet mask tells us which part of an IPv4 address represents the network and which part represents the host.
 
