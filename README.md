@@ -4,7 +4,7 @@
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="https://img.shields.io/github/last-commit/ahmd-sinan/Today-I-Learned?style=flat&label=Last%20Learned&color=green" alt="Last Learned" />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://img.shields.io/badge/Total%20Learnings-94-blue?style=flat" alt="Total Learnings" />
+  <img src="https://img.shields.io/badge/Total%20Learnings-95-blue?style=flat" alt="Total Learnings" />
 </div>
 <br />
 
@@ -136,6 +136,7 @@ I keep a flat directory structure for simplicity. Files are named using the `YYY
 * [2026-09-20] **Computer Networking: Physical Cables & Connectors**
 * [2026-09-21] **Computer Networking: Ethernet Categories, Wiring Standards & Crimping**
 * [2026-09-22] **Computer Networking: Core Intermediary Devices & Servers**
+* [2026-09-25] **Computer Networking: IP Addressing, Subnets, MAC & CLI Tools**
 * *(More coming soon...)*
 
 ---
