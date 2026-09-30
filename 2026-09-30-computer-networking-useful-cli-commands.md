@@ -39,3 +39,31 @@ Here are practical, real-world examples of how to execute these commands in a te
 **Show IP addresses:**
 ```bash
 ip addr
+```
+
+**Show routing table:**
+```Bash
+ip route
+```
+
+**Test connectivity:**
+```Bash
+ping 8.8.8.8
+```
+
+**Test DNS:**
+```Bash
+dig example.com
+```
+
+**Check open connections:**
+```Bash
+ss -tuln
+```
+
+**Test a web service:**
+```Bash
+curl [https://example.com](https://example.com)
+```
+
+
