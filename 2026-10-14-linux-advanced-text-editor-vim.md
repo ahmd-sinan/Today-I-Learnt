@@ -1,6 +1,6 @@
 # Linux CLI: Advanced Text Editing with Vi/Vim 
 
-**Date:** 2026-10-15
+**Date:** 2026-10-14
 
 Today I learned the mechanics of the most ubiquitous text editor in the UNIX world. While approachable editors like `nano` are great for quick edits, mastering `vi` (and its modern successor, `vim`) is a mandatory survival skill for managing headless servers and locked-down cloud instances.
 
