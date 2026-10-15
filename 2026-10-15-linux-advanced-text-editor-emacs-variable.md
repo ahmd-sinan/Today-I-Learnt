@@ -1,6 +1,6 @@
 # Linux CLI: Advanced Text Editors (`emacs`) & Variables 
 
-**Date:** 2026-10-16
+**Date:** 2026-10-15
 
 While `vi` is the undisputed king of pre-installed ubiquity, `emacs` is the other classic UNIX text editor. It has a massive, loyal community and is essentially an entire computing environment built around a text editor. Today I learned the basics of modeless editing in Emacs and how to configure system-wide default editors.
 
