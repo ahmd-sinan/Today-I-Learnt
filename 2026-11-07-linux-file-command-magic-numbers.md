@@ -7,17 +7,17 @@
 
 Today I learned how Linux actually determines what a file is. Unlike Windows, which relies heavily on file extensions, Linux looks directly into the binary contents of the file itself to determine its true identity.
 
-## 1. The Linux Philosophy: Extensions are Cosmetic
+## The Linux Philosophy: Extensions are Cosmetic
 In Windows, the OS relies heavily on extensions; a file ending in `.exe` is executed, and `.txt` is opened in Notepad. 
 
 On Linux, a file's extension is purely cosmetic. You could easily name an executable binary program `report.txt` or a plain text file `data.exe`, and the Linux kernel would not care. Extensions are just a convenience for the human reading them.
 
-## 2. The `file` Command & Magic Numbers
+## The `file` Command & Magic Numbers
 Because you cannot trust file extensions on Linux, system administrators rely on the `file` command. This utility completely ignores the filename and examines the actual contents to determine the file's true nature.
 
 It does this by looking for **"Magic Numbers"**. A magic number is a specific, standardized byte signature located at the very beginning of a file (the header) that definitively dictates its structural format and identity. 
 
-## 3. Real-World Examples
+## Real-World Examples
 Here is how the `file` command exposes the true identity of different files:
 
 **Identifying a standard executable:**
