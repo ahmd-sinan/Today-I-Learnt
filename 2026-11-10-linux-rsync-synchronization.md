@@ -1,6 +1,7 @@
-# Linux CLI: Advanced Data Synchronization with `rsync` 🔄
+# Linux CLI: Advanced Data Synchronization with `rsync` 
 
 **Date:** 2026-11-10
+
 **Category:** Linux / System Administration
 **Tags:** #Linux #CLI #Rsync #Backups #SysAdmin #Networking
 
