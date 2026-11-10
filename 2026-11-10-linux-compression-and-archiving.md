@@ -7,7 +7,7 @@
 
 Files are often compressed to save disk space and to transfer faster over a network. Today I learned the core Linux compression tools, which trade off along one main axis: how much space they save versus how long they take. Generally, the tighter the compression, the longer it takes to compress, though decompression is fast across all of them.
 
-## 1. Overview of Compression Utilities
+## Overview of Compression Utilities
 The right choice depends on your priority.
 *   **gzip:** The classic, fast, general-purpose choice; provides good compression with excellent speed[cite: 5]. Use when compressing something you'll transfer often and quickly.
 *   **bzip2:** Compresses smaller than `gzip`, but slower; still common for existing `.bz2` files[cite: 5].
@@ -23,9 +23,10 @@ To see the trade-off in action, consider a benchmark compressing a representativ
 | **gzip** | ~26MB | Fastest |
 | **bzip2** | ~19MB | Slower |
 | **xz** | ~15MB | Slowest |
+
 *(Note: As the compressed size goes down, the time to produce it goes up).*
 
-## 2. Using the Compression Tools
+## Using the Compression Tools
 
 ### `gzip`
 `gzip` is the long-standing, most widely used Linux compression tool. It's fast and compresses well, which makes it the sensible default. Compressing a file replaces it with a `.gz` version; `gunzip` reverses the process.
