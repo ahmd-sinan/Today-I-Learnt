@@ -1,12 +1,13 @@
-# Linux CLI: Raw Disk-to-Disk Copying (`dd`) 💽
+# Linux CLI: Raw Disk-to-Disk Copying (`dd`) 
 
-**Date:** 2026-11-10
+**Date:** 2026-11-11
+
 **Category:** Linux / System Administration
 **Tags:** #Linux #CLI #dd #Storage #SysAdmin #Backups
 
 Unlike `cp` or `rsync`, which copy files within an existing filesystem layout, `dd` operates at a much lower level. It makes direct, byte-for-byte copies of raw storage devices, partitions, or data streams. It does not care about files, folders, or formats—it strictly reads and writes raw binary data.
 
-## 1. The Core Syntax
+## The Core Syntax
 The `dd` command uses a unique syntax compared to other Linux commands, relying on `key=value` pairs rather than standard dash-flags (`-v`).
 
 *   **`if=` (Input File):** The source you are reading from.
@@ -15,7 +16,7 @@ The `dd` command uses a unique syntax compared to other Linux commands, relying 
 *   **`count=` (Count):** How many blocks to copy before stopping. If omitted, `dd` copies until it reaches the end of the input file.
 *   **`status=progress`:** By default, `dd` is completely silent until it finishes. Adding this tells `dd` to print real-time transfer speeds and progress to the terminal.
 
-## 2. The "Disk Destroyer" Warning
+## The "Disk Destroyer" Warning
 **Serious Warning:** `dd` copies raw data with absolutely no safety checks and no undo. Getting the source (`if=`) and destination (`of=`) backwards is catastrophic.
 
 For example, typing:
@@ -28,7 +29,7 @@ This makes an exact byte-for-byte copy of the first disk (`sda`) onto the second
 **​⚠️ SysAdmin Rule:** Do not run `dd` commands like this experimentally. Always double- and triple-check the `if=` and `of=` values using tools like `lsblk` or `fdisk -l` before hitting Enter.
 
 
-## 3. Real-World Practical Examples
+## Real-World Practical Examples
 ###​ Example A: Backing Up the Master Boot Record (MBR)
 
 ​Historically, the very first 512-byte sector of a disk held the Master Boot Record (partition table) on older BIOS-based systems. You could back up just this sector using:
