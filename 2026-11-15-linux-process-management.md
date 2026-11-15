@@ -75,5 +75,7 @@ To forcefully stop the process immediately without waiting for it to clean up, y
 $kill -9 4820$ kill -SIGKILL 4820
 ```
 > ***💡 SysAdmin Pro-Tip: SIGTERM vs SIGKILL***
+> 
 > Force-killing a process with `-9` (`SIGKILL`) can cause data corruption because the program is instantly destroyed without a chance to save files.
+> 
 > It is always best practice to try standard termination first by running `kill 4820` (which defaults to `-15` or `SIGTERM`). This politely asks the process to save its data and shut down. Only use `-9` if the process completely refuses to close!
