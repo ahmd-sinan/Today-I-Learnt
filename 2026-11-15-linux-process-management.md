@@ -18,20 +18,20 @@ Processes come in a few different types depending on the job they do. A terminal
 
 | Process Type | Description | Examples |
 | :--- | :--- | :--- |
-| **Interactive** | Started by a user, either at the command line or through a graphical interface like an icon or menu[cite: 9]. | `bash`, `firefox`, `top`, `Slack`, `LibreOffice`[cite: 9]. |
-| **Batch** | Automatic processes scheduled to run and then disconnected from the terminal[cite: 9]. They're queued and handled on a first-in, first-out (FIFO) basis[cite: 9]. | `updatedb`, `ldconfig`, log rotation scripts[cite: 9]. |
-| **Daemons** | Background server processes that run continuously[cite: 9]. Many launch at system startup and then wait quietly until their service is needed[cite: 9]. | `httpd`, `sshd`, `libvirtd`, `cupsd`, `systemd-resolved`[cite: 9]. |
-| **Threads** | Lightweight processes that run under the umbrella of a main process, sharing its memory and resources but scheduled individually[cite: 9]. A thread can end without ending the whole process, and a process can spawn new threads at any time[cite: 9]. Many non-trivial programs are multi-threaded[cite: 9]. | `dconf-service`, `gnome-terminal-server`[cite: 9]. |
-| **Kernel Threads** | Kernel tasks that users don't start, stop, or control directly[cite: 9]. They handle low-level work like moving a task between CPUs or making sure disk input/output completes[cite: 9]. | `kthreadd`, `migration`, `ksoftirqd`[cite: 9]. |
+| **Interactive** | Started by a user, either at the command line or through a graphical interface like an icon or menu. | `bash`, `firefox`, `top`, `Slack`, `LibreOffice`. |
+| **Batch** | Automatic processes scheduled to run and then disconnected from the terminal. They're queued and handled on a first-in, first-out (FIFO) basis. | `updatedb`, `ldconfig`, log rotation scripts. |
+| **Daemons** | Background server processes that run continuously. Many launch at system startup and then wait quietly until their service is needed. | `httpd`, `sshd`, `libvirtd`, `cupsd`, `systemd-resolved`. |
+| **Threads** | Lightweight processes that run under the umbrella of a main process, sharing its memory and resources but scheduled individually. A thread can end without ending the whole process, and a process can spawn new threads at any time. Many non-trivial programs are multi-threaded. | `dconf-service`, `gnome-terminal-server`. |
+| **Kernel Threads** | Kernel tasks that users don't start, stop, or control directly. They handle low-level work like moving a task between CPUs or making sure disk input/output completes. | `kthreadd`, `migration`, `ksoftirqd`. |
 
 ## Process Identifiers (IDs)
 At any given moment, multiple processes are running, and the operating system keeps track of them all by assigning unique identifiers. PIDs are usually handed out in ascending order as processes are created. 
 
 | ID Type | Description |
 | :--- | :--- |
-| **Process ID (PID)** | The process's unique ID number[cite: 8]. |
-| **Parent Process ID (PPID)** | The process that started this one[cite: 8]. If the parent exits before the child, the orphaned child is "adopted" — normally by PID 1 (`init`/`systemd`), so its PPID becomes 1[cite: 8]. Note: Certain supervisor programs can register to adopt their own orphaned descendants instead, but PID 1 is the default[cite: 8]. |
-| **Thread ID (TID)** | The thread's ID number[cite: 8]. For a single-threaded process, this is the same as the PID[cite: 8]. In a multi-threaded process, every thread shares the same PID but has its own unique TID[cite: 8]. |
+| **Process ID (PID)** | The process's unique ID number. |
+| **Parent Process ID (PPID)** | The process that started this one. If the parent exits before the child, the orphaned child is "adopted" — normally by PID 1 (`init`/`systemd`), so its PPID becomes 1. Note: Certain supervisor programs can register to adopt their own orphaned descendants instead, but PID 1 is the default. |
+| **Thread ID (TID)** | The thread's ID number. For a single-threaded process, this is the same as the PID. In a multi-threaded process, every thread shares the same PID but has its own unique TID. |
 
 ## Process Scheduling and States
 A critical kernel function called the **scheduler** constantly shifts processes on and off the CPU, sharing time according to each process's priority, how much time it needs, and how much it has already had.
