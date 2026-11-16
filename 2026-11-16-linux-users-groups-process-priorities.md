@@ -94,7 +94,7 @@ For highly time-sensitive background tasks, such as live audio processing or hig
 
 *Note: In standard Linux distributions, real-time priorities are "soft" real-time. This is distinct from hard real-time systems (like those used in pacemakers or avionics), which guarantee mathematically that tasks finish within strict, non-negotiable time limits.*
 
-## 5. Graphical Process Management (`gnome-system-monitor`)
+## Graphical Process Management (`gnome-system-monitor`)
 If you are working inside a graphical desktop environment (like Ubuntu's default GNOME desktop), you do not always have to use CLI tools like `ps`, `top`, `kill`, or `renice`.
 
 You can use the GNOME System Monitor, which is the graphical equivalent of the Windows Task Manager.
