@@ -7,7 +7,7 @@
 
 Today I learned how Linux tracks who is running a process and how it determines which processes get first dibs on the CPU. I explored the critical distinction between Real and Effective IDs, how to tune CPU scheduling using `nice` and `renice`, and how to manage it all visually using the GNOME System Monitor.
 
-## 1. User and Group IDs (UID & GID)
+## User and Group IDs (UID & GID)
 Multiple people can use a Linux system at the same time, and each can run multiple processes. The operating system uses internal ID numbers to track ownership and access rights.
 
 *   **Real User ID (RUID):** Identifies the actual, logged-in user who started the process.
@@ -29,7 +29,7 @@ $ id
 uid=1000(student) gid=1000(student) groups=1000(student),27(sudo),4(adm)
 ```
 
-## 2. Process Priorities and "Niceness"
+## Process Priorities and "Niceness"
 At any moment, many processes may be ready to run, but each CPU core (or hardware thread) can only execute one task at a time. Linux lets you adjust a process's scheduling priority to give critical tasks preferential access to CPU time.
 
 Standard process priority is set using a value called niceness:
@@ -89,7 +89,7 @@ You can alter the priority of every process owned by a specific user using the `
 $ sudo renice +5 -u student
 ```
 
-## 4. Real-Time Priorities
+## Real-Time Priorities
 For highly time-sensitive background tasks, such as live audio processing or high-speed data capture, Linux supports real-time priorities. Real-time tasks take absolute precedence over all standard processes, regardless of their niceness values.
 
 *Note: In standard Linux distributions, real-time priorities are "soft" real-time. This is distinct from hard real-time systems (like those used in pacemakers or avionics), which guarantee mathematically that tasks finish within strict, non-negotiable time limits.*
