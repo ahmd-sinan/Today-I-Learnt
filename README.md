@@ -17,7 +17,7 @@ Welcome to my **Today I Learned** repository! This is an open-source collection 
 TIL is a repository where I document short notes, tips, and tricks that I learn daily. Instead of waiting to write full blog posts, I commit these small learnings here to:
 1.  **Track my progress** over time
 2.  **Reinforce my memory** (writing helps remembering!)
-3.  **Share knowledge** with the open-source community.
+3.  **Share knowledge** with the open-source community..
 
 ## 👨‍💻 About Me
 I am a BCA student deeply passionate about low-level systems, backend architecture, and cloud computing. My technical focus is on building robust server-side infrastructure and mastering modern deployment technologies.
@@ -28,12 +28,12 @@ I keep a flat directory structure for simplicity. Files are named using the `YYY
 **Topics Covered:**
 
 *   🐧 **Linux:** Commands, File System, Permissions, Boot Process, Systemctl & Background Services.
-*   💻 **C Language:** Pointers, Memory Management, File I/O, Debugging.
+*   💻 **C Language:** Pointers, Memory Management, File I/O, Debugging..
 *   🏗️ **Data Structures:** Linked Lists, Hash Tables, Binary Search Trees, Tries, Stacks & Queues
 *   🐍 **Python:** Core Syntax, Functions, Dictionaries, Error Handling, CLI Tools.
 *   🗄️ **Databases & SQL:** Relational Design (RDBMS), SQLite vs MySQL, Queries, Python-SQL Integration, SQLi
 *   🧠 **Computer Fundamentals:** Hardware, Binary Representation, Memory Architecture, OOP vs POP
-*   🌐 **Web Development:** Frontend Basics.
+*   🌐 **Web Development:** Frontend Basics..
 
 ---
 
