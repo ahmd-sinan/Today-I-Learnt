@@ -4,12 +4,12 @@
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="https://img.shields.io/github/last-commit/ahmd-sinan/Today-I-Learned?style=flat&label=Last%20Learned&color=green" alt="Last Learned" />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://img.shields.io/badge/Total%20Learnings-111-blue?style=flat" alt="Total Learnings" />
+  <img src="https://img.shields.io/badge/Total%20Learnings-112-blue?style=flat" alt="Total Learnings" />
 </div>
 <br />
 
 # 📝 TIL (Today I Learned)
-> "Daily consistency beats intensity.".
+> "Daily consistency beats intensity."
 
 Welcome to my **Today I Learned** repository! This is an open-source collection of concise write-ups on small things I learn day-to-day as my journey as a **Self-Taught Developer**
 
@@ -151,6 +151,7 @@ I keep a flat directory structure for simplicity. Files are named using the `YYY
 * [2026-11-11] **Linux CLI: Raw Disk-to-Disk Copying (dd)** [LFS101]
 * [2026-11-15] **Linux CLI: Process Management, States, and Signals** [LFS101]
 * [2026-11-16] **Linux CLI: User/Group IDs, Process Priorities (nice and renice) & GUI Monitoring** [LFS101]
+* [2026-11-17] **Linux CLI: Understanding System Load Averages** [LFS101]
 * *(More coming soon...)*
 
 ---
