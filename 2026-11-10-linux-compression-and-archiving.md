@@ -80,7 +80,7 @@ The letters after tar are its options:
 | :--- | :--- |
 | `tar xvf mydir.tar` | Extract the contents of `mydir.tar` into the current directory. | 
 | `tar zcvf mydir.tar.gz mydir` | Create an archive of `mydir` and compress it with `gzip`. | 
-| `tar jcvf mydir.tar.bz2 mydi`r | Create an archive of the `mydir` directory and compress it with `bzip2`, producing `mydir.tar.bz2`. |
+| `tar jcvf mydir.tar.bz2 mydir` | Create an archive of the `mydir` directory and compress it with `bzip2`, producing `mydir.tar.bz2`. |
 | `tar Jcvf mydir.tar.xz mydir` | Create an archive of the `mydir` directory and compress it with `xz`, producing `mydir.tar.xz`. |
 | `tar xvf mydir.tar.gz` | Extract the contents of the gzip-compressed archive `mydir.tar.gz` into the current directory. `tar` detects and handles the decompression automatically. |  
 
