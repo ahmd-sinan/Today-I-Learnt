@@ -9,10 +9,10 @@ Files are often compressed to save disk space and to transfer faster over a netw
 
 ## Overview of Compression Utilities
 The right choice depends on your priority.
-*   **gzip:** The classic, fast, general-purpose choice; provides good compression with excellent speed[cite: 5]. Use when compressing something you'll transfer often and quickly.
-*   **bzip2:** Compresses smaller than `gzip`, but slower; still common for existing `.bz2` files[cite: 5].
-*   **xz:** The most space-efficient of the common tools, at the cost of the slowest compression[cite: 5]. Use when squeezing a large file down as small as possible for long-term storage or download.
-*   **zip:** Mainly used for exchanging archives with Windows and other systems[cite: 5].
+*   **gzip:** The classic, fast, general-purpose choice; provides good compression with excellent speed. Use when compressing something you'll transfer often and quickly.
+*   **bzip2:** Compresses smaller than `gzip`, but slower; still common for existing `.bz2` files.
+*   **xz:** The most space-efficient of the common tools, at the cost of the slowest compression. Use when squeezing a large file down as small as possible for long-term storage or download.
+*   **zip:** Mainly used for exchanging archives with Windows and other systems.
 
 ### Compression Performance Comparison
 To see the trade-off in action, consider a benchmark compressing a representative text-heavy directory tree (roughly 130MB uncompressed)[cite: 6]:
