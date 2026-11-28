@@ -4,7 +4,7 @@
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="https://img.shields.io/github/last-commit/ahmd-sinan/Today-I-Learned?style=flat&label=Last%20Learned&color=green" alt="Last Learned" />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://img.shields.io/badge/Total%20Learnings-115-blue?style=flat" alt="Total Learnings" />
+  <img src="https://img.shields.io/badge/Total%20Learnings-116-blue?style=flat" alt="Total Learnings" />
 </div>
 <br />
 
@@ -155,6 +155,7 @@ I keep a flat directory structure for simplicity. Files are named using the `YYY
 * [2026-11-24] **Linux CLI: Background, Foreground & Job Control** [LFS101]
 * [2026-11-25] **Linux CLI: Inspecting Processes with ps & pstree** [LFS101]
 * [2026-11-26] **Linux CLI: Live System Monitoring with top** [LFS101]
+* [2026-11-28] **Linux CLI: Scheduling Future Tasks (at, cron, anacron, sleep)** [LFS101]
 * *(More coming soon...)*
 
 ---
